@@ -15,6 +15,36 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
+            },
+            {
+                test: /\.global\.scss$/,
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader",
+                    options: {
+                        sourceMap: true,
+                        importLoaders: 1
+                    }
+                }, {
+                    loader: "sass-loader"
+                }]
+            },
+            {
+                test: /^((?!.global).)*\.scss$/,
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader",
+                    options: {
+                        modules: true,
+                        sourceMap: true,
+                        importLoaders: 1,
+                        localIdentName: '[name]__[local]__[hash:base64:5]'
+                    }
+                }, {
+                    loader: "sass-loader"
+                }]
             }
         ]
     },

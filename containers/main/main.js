@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import List from '../components/list';
-import InputCity from '../components/input-city';
-import { addCity, deleteCity, refreshCity } from '../store/actions'
+import List from '../../components/list/list';
+import InputCity from '../../components/input/input-city';
+import { addCity, deleteCity, refreshCity } from '../../store/actions'
 
 class Main extends React.Component {
     render () {

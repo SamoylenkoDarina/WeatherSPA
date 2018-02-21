@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './input.scss';
 
 class InputCity extends React.Component {
     constructor() {
@@ -29,9 +30,9 @@ class InputCity extends React.Component {
 
     render () {
         return (
-            <div>
-                <input value={this.state.data} type="text" onChange={this.collectData}/>
-                <button onClick={this.handleClick}>add</button>
+            <div className={styles.inputContainer}>
+                <input value={this.state.data} type="text" onChange={this.collectData} className={styles.input}/>
+                <button onClick={this.handleClick} className={styles.addBtn}>Add city</button>
             </div>
         )
     }
