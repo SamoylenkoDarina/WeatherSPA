@@ -1,0 +1,53 @@
+.details {
+    width: 50%;
+    margin: 200px auto 0;
+    background: linear-gradient(to right, #e1ffff 0%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%);
+    box-shadow: 9px 10px 42px 0px rgba(79,79,79,1);
+    border-radius: 5px;
+    color:  rgb(81, 67, 122);
+    border-top: 10px solid rgb(81, 67, 122);
+    padding: 15px;
+
+    .detailsHeader {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        position: relative;
+        p {
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+    .detailsBody {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: 46%;
+    }
+    .weatherItem {
+        display: flex;
+        justify-content: space-between;
+        & :last-child {
+            font-weight: bold;
+        }
+    }
+
+    h2, p {
+        margin: 0 0 8px 0;
+    }
+
+    .closeBtn {
+        display: block;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: -32px;
+        right: -24px;
+        background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Cute-Ball-Stop-icon.png');
+        background-size: cover;
+    }
+}

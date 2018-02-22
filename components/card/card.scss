@@ -8,7 +8,7 @@
     height: 100px;
     border-radius: 5px;
     text-decoration: none;
-    color: rgb(81, 76, 95);
+    color:  rgb(81, 67, 122);
     background: linear-gradient(to right, #e1ffff 0%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%);
     box-shadow: 9px 10px 42px 0px rgba(79,79,79,1);
 
@@ -29,7 +29,7 @@
         height: 20px;
         border: none;
         margin-left: 5px;
-        background-color: rgb(81, 76, 95);
+        background-color: rgb(81, 67, 122);
         border-radius: 10px;
         outline: none;
         cursor: pointer;
@@ -52,12 +52,12 @@
     }
 
     .weatherIcon {
-        height: 45px;
+        height: 50px;
         width: 60px;
         background-size: cover !important;
         position: absolute;
         right: 5px;
-        top: 45px;
+        top: 47px;
     }
 }
 
