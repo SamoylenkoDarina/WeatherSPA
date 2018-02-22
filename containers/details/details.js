@@ -63,7 +63,7 @@ class Details extends React.Component {
 
                         <div className={styles.weatherItem}>
                             <p>Visibility: </p>
-                            <p>{`${this.city.visibility || 0} m`}</p>
+                            <p>{`${this.city.visibility || ''} m`}</p>
                         </div>   
                     </div>
                 </div>

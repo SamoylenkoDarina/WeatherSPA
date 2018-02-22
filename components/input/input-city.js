@@ -5,13 +5,14 @@ class InputCity extends React.Component {
     constructor() {
         super();
         this.collectData = this.collectData.bind(this);
-        this.handleClick = this.handleClick.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
             data: ''
         }
     };
 
-    handleClick() {
+    handleSubmit(e) {
+        e.preventDefault();
         if (this.state.data === '') {
             return
         }
@@ -31,8 +32,10 @@ class InputCity extends React.Component {
     render () {
         return (
             <div className={styles.inputContainer}>
-                <input value={this.state.data} type="text" onChange={this.collectData} className={styles.input}/>
-                <button onClick={this.handleClick} className={styles.addBtn}>Add city</button>
+                <form onSubmit={this.handleSubmit}>
+                    <input value={this.state.data} type="text" onChange={this.collectData} className={styles.input}/>
+                    <button className={styles.addBtn}>Add city</button>
+                </form>
             </div>
         )
     }
