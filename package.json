@@ -4,7 +4,7 @@
   "description": "description",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 3000"
+    "start": "webpack & http-server -p 3000"
   },
   "author": "Leina",
   "license": "ISC",
